@@ -3,18 +3,10 @@ package lesson1;
 public class Main {
 
 	public static void main(String[] args) {
-		byte glasses;
-		glasses = 2;
-		short age;
-		age = 18;
-		int salary;
-		salary = 152000;
-		long worldPeople;
-		worldPeople = 6900000000L;
-		System.out.println(glasses);
-		System.out.println(age);
-		System.out.println(salary);
-		System.out.println(worldPeople);
+		int age = 20;
+		System.out.println("私の年齢は" + age);
+		age = 31;
+		System.out.println("…いや、本当の年齢は" + age);
 	}
 
 }
