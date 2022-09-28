@@ -1,12 +1,13 @@
 package lesson2;
 
-import java.util.Random;
-
 public class Main {
-
-	public static void main(String[] args) {
-		int r = new Random().nextInt(90);
-		System.out.println("あなたはたぶん、" + r + "歳ですね？");
-	}
-
+  public static void main(String[] args) {
+    System.out.println("あなたの名前を入力してください");
+    @SuppressWarnings("resource")
+	String name = new java.util.Scanner(System.in).nextLine();
+    System.out.println("あなたの年齢を入力してください");
+    @SuppressWarnings("resource")
+	int age = new java.util.Scanner(System.in).nextInt();
+    System.out.println("ようこそ、" + age + "歳の" + name + "さん");
+  }
 }
